@@ -400,7 +400,7 @@ nav .fas{
 }
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(https://github.com/usmanayub14/My-Portfolio/images/phone-background.png);
+        background-image: url(https://raw.githubusercontent.com/usmanayub14/My-Portfolio/main/images/phone-background.png);
     }
 
     .header-text {
