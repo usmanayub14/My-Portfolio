@@ -17,7 +17,8 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(https://github.com/usmanayub14/My-Portfolio/images/Background.png);
+    background-image: url(https://raw.githubusercontent.com/usmanayub14/My-Portfolio/main/images/Background.png
+);
     background-size: cover;
     background-position: center;
 }
