@@ -193,82 +193,74 @@ nav {
 
 .experience-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 30px; /* Added gap for better spacing */
 }
 
 .experience {
-    flex-basis: 30%; /* Adjusted to fit three experiences in one row */
+    flex-basis: 30%;
     position: relative;
-    margin: 10px 0; /* Reduced margin for better spacing */
-    overflow: hidden; /* Ensures content doesn't overflow the borders */
-    border-radius: 10px; /* Ensures rounded corners */
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .experience img {
     width: 100%;
     border-radius: 10px;
-    transition: transform 0.5s; /* Smooth scale transition */
+    transition: transform 0.5s ease-in-out;
 }
 
 .experience .layer {
     width: 100%;
-    height: 0;
-    background: rgba(255, 0, 79, 0.7);
+    height: 100%;
+    background: rgba(255, 0, 79, 0.8);
     position: absolute;
-    bottom: 0; /* Start from the bottom */
+    top: 100%;
     left: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     opacity: 0;
-    transition: height 0.5s, opacity 0.5s; /* Smooth height and opacity transition */
-    border-radius: 10px; /* Ensures rounded corners */
+    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .experience:hover .layer {
-    height: 100%;
+    top: 0;
     opacity: 1;
 }
 
 .experience:hover img {
-    transform: scale(1.1); /* Scales the image on hover */
+    transform: scale(1.1);
 }
 
 .layer h3 {
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .layer p {
+    font-size: 16px;
+    color: #ffffff;
     padding: 0 10%;
-    text-align: center;
 }
 
 .layer a {
     margin-top: 15px;
     color: #ffffff;
-    font-size: 30px;
-}
-
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
+    font-size: 24px;
     text-decoration: none;
-    color: #ffffff;
-    transition: background 0.5s;
 }
 
-.btn:hover{
-    background: #ff004f;
+.layer a:hover {
+    text-decoration: underline;
 }
-
-
 /* --------------Skills-------------- */
 #skills {
     padding: 80px 0;
