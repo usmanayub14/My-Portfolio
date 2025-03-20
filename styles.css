@@ -179,64 +179,80 @@ nav {
     text-decoration: underline;
 }
 .projects-list div:hover {
-    background: #f0f0f0; 
+    background: #f0f0f0;
     transform: translateY(-10px);
 }
-.projects-list div:hover h2, 
+.projects-list div:hover h2,
 .projects-list div:hover p {
-    color: #080808; 
+    color: #080808;
 }
 /* ----------------Experience Section-------------- */
 #experience {
-    padding: 100px 5%;
-    text-align: center;
+    padding: 50px 0;
+    background-color: #000000;
+    color: #fff;
+    text-align: left;  /* Left align content */
+}
+
+#experience .container {
+    padding: 0 10%; /* Match container padding from base styles */
+}
+
+#experience .sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .experience-list {
     display: flex;
-    justify-content: space-between; /* Ensure even spacing */
-    flex-wrap: wrap;
-    gap: 30px; /* Maintain spacing between cards */
+    flex-direction: column; /* Stack items vertically */
+    gap: 30px;  /* Spacing between experience items */
 }
 
 .experience {
-    flex: 1;
-    min-width: 300px; /* Prevents cards from getting too small */
-    max-width: 30%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #111;
     padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border-left: 4px solid #ff004f; /* Pink left border */
 }
 
 .experience:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+}
+
+.experience h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .experience h3 {
-    font-size: 22px;
-    color: #fff;
+    font-size: 16px;
+    color: #aaa;
     margin-bottom: 10px;
+    font-style: italic;
 }
 
 .experience p {
     font-size: 16px;
+    line-height: 1.6;
     color: #ddd;
-    line-height: 1.5;
 }
 
-/* Ensure responsiveness */
-@media (max-width: 900px) {
-    .experience {
-        max-width: 45%;
-    }
+.experience ul {
+    list-style: disc;
+    padding-left: 25px;
+    margin-top: 10px;
 }
 
-@media (max-width: 600px) {
-    .experience {
-        max-width: 100%;
-    }
+.experience ul li {
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 5px;
 }
+
 /* --------------Skills-------------- */
 #skills {
     padding: 80px 0;
@@ -462,4 +478,3 @@ nav .fas{
         margin-right: 20px;
     }
 }
-
